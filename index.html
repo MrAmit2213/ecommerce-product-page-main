@@ -10,15 +10,33 @@
 
   <link rel="stylesheet" href="index.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   <script src="index.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+
+  <div class="flex  lightbox">
+    <!-- <div class="adjust"> -->
+      <svg id="end" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#fff" fill-rule="evenodd"/></svg>
+      <div class="flex main">
+        <svg id="pre" width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        <div>
+          <img id="image" src="images/image-product-1.jpg" alt="img">
+        </div>
+        <svg id="next" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+
+      </div>
+      <div class="flex change">
+        <img id="light1" src="images/image-product-1-thumbnail.jpg" alt="img">
+        <img id="light2" src="images/image-product-2-thumbnail.jpg" alt="img">
+        <img id="light3" src="images/image-product-3-thumbnail.jpg" alt="img">
+        <img id="light4" src="images/image-product-4-thumbnail.jpg" alt="img">
+      </div>
+    <!-- </div> -->
+  </div>
   
   <div id="body">
 
@@ -47,7 +65,7 @@
 
   <main class="grid">
     <section class="container">
-      <div>
+      <div id="mainImg">
         <img id="img1" class="mainImg" src="images/image-product-1.jpg" alt="Main Img">
         <img id="img2" class="mainImg" src="images/image-product-2.jpg" alt="Main Img">
         <img id="img3" class="mainImg" src="images/image-product-3.jpg" alt="Main Img">
@@ -101,7 +119,6 @@
   <div id="basket">
     <div class="flex btw">
       <h4>Cart</h4>
-      <svg onclick="normal()" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
     </div>
     <div id="content">
       <div id="empty">The cart is empty.</div>
@@ -126,10 +143,5 @@
   </div>
 
 
-<!--   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
