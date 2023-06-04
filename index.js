@@ -234,6 +234,11 @@ $(document).ready(function(){
         } 
         altr(i);
     });
+
+    $('.container').click(function(){
+        $('#basket').hide();
+    });
+
 }
 
 
