@@ -224,11 +224,39 @@ s{
     right: 4%;
 }
 
+#nextM, #preM{
+    display: none;
+    padding: 15px 17.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+}
+#nextM{
+    right: 10px;
+}
+#preM{
+    left: 10px;
+}
+
 
 @media(max-width:375px)
 {
+    #nextM, #preM{
+        display: block;
+    }
+    #mainImg{
+        display: flex;
+        align-items: center;
+    }
+    .lightbox{
+        display: none !important;
+    }
     body{
         padding: 0%;
+    }
+
+    #body{
+        margin: 0;
     }
 
     #ham{
@@ -243,7 +271,7 @@ s{
         gap: 3vw;
     }
     header{
-        /* padding: 0 25px; */
+        padding: 0 15px;
         border: none;
         margin: 4vw 0;
     }
@@ -262,6 +290,7 @@ s{
     }
     .container2{
         padding: 5vw 5vw 0 0 ;
+        margin: 15px;
     }
     .heading{
         font-size: 15px;
@@ -293,9 +322,9 @@ s{
     #pop{
         background-color: white;
         width: 60%;
-        height: 130vw;
+        height: 181vw;
         position: relative;
-        top: -780px;
+        top: -875px;
         padding: 5vw;
     }
     #pop svg{
@@ -309,7 +338,7 @@ s{
         left: 15px;
         width: 345px;
         height: 300px;
-        bottom: 725px;
+        bottom: 805px;
     }
     #basket h4{
         padding-top: 6vw;
