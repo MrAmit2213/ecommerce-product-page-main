@@ -187,7 +187,7 @@ s{
     border-radius: 10px;
 }
 .lightbox{
-    /* display: none;   */
+    display: none;  
     background-color: rgba(0, 0, 0, 0.558);
     height: 60vw;
     width: 100%;
